@@ -1357,10 +1357,10 @@ TextureImporter:
     second: roguelikeSheet_transparent_450
   - first:
       213: 9183245212276430330
-    second: roguelikeSheet_transparent_451
+    second: c2
   - first:
       213: -2737388367586560776
-    second: roguelikeSheet_transparent_452
+    second: c1
   - first:
       213: 6572233111204585540
     second: roguelikeSheet_transparent_453
@@ -1561,16 +1561,16 @@ TextureImporter:
     second: roguelikeSheet_transparent_518
   - first:
       213: 7583747511342099666
-    second: roguelikeSheet_transparent_519
+    second: FB
   - first:
       213: 2050675941762335830
-    second: roguelikeSheet_transparent_520
+    second: FO
   - first:
       213: 6599784681087759586
-    second: roguelikeSheet_transparent_521
+    second: FP
   - first:
       213: -2165307968607887038
-    second: roguelikeSheet_transparent_522
+    second: FW
   - first:
       213: -4893564818861623816
     second: roguelikeSheet_transparent_523
@@ -3943,10 +3943,10 @@ TextureImporter:
     second: roguelikeSheet_transparent_1312
   - first:
       213: 6883580334832991339
-    second: roguelikeSheet_transparent_1313
+    second: pr1
   - first:
       213: -7286032812492963234
-    second: roguelikeSheet_transparent_1314
+    second: pr2
   - first:
       213: 6993983118949862191
     second: roguelikeSheet_transparent_1315
@@ -14634,7 +14634,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_451
+      name: c2
       rect:
         serializedVersion: 2
         x: 239
@@ -14655,7 +14655,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_452
+      name: c1
       rect:
         serializedVersion: 2
         x: 256
@@ -16062,7 +16062,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_519
+      name: FB
       rect:
         serializedVersion: 2
         x: 480
@@ -16083,7 +16083,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_520
+      name: FO
       rect:
         serializedVersion: 2
         x: 497
@@ -16104,7 +16104,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_521
+      name: FP
       rect:
         serializedVersion: 2
         x: 514
@@ -16125,7 +16125,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_522
+      name: FW
       rect:
         serializedVersion: 2
         x: 531
@@ -32736,7 +32736,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_1313
+      name: pr1
       rect:
         serializedVersion: 2
         x: 918
@@ -32757,7 +32757,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_1314
+      name: pr2
       rect:
         serializedVersion: 2
         x: 935
@@ -40514,7 +40514,7 @@ TextureImporter:
         width: 15
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

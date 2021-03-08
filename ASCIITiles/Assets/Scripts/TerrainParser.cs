@@ -39,7 +39,9 @@ public class TerrainParser : MonoBehaviour
     public GameObject tentTopRight;
     public GameObject tentBottomLeft;
     public GameObject tentBottomRight;
-    
+    public GameObject campfire;
+    public GameObject flowerW;
+    public GameObject flowerP;
     
     // Start is called before the first frame update
     void Start()
@@ -131,7 +133,7 @@ public class TerrainParser : MonoBehaviour
 
                 switch (c)
                 {
-                    case 'p': //player 
+                    case 'P': //player 
                         newObj = Instantiate<GameObject>(playerT);
                         break;
                     case 'R': //tent top right
@@ -145,6 +147,15 @@ public class TerrainParser : MonoBehaviour
                         break;
                     case 'l': //tent bottom left
                         newObj = Instantiate<GameObject>(tentBottomLeft);
+                        break;
+                    case 'c'://campfire
+                        newObj = Instantiate<GameObject>(campfire);
+                        break;
+                    case 'w'://white flower
+                        newObj = Instantiate<GameObject>(flowerW);
+                        break;
+                    case 'p'://purple flower
+                        newObj = Instantiate<GameObject>(flowerP);
                         break;
                     default:
                         newObj = null;
