@@ -126,7 +126,7 @@ public class TerrainParser : MonoBehaviour
                 if (newObj != null)
                 {
                     newObj.transform.position = new Vector2(x * tileSize + xOffset, -y * tileSize + yOffset);
-                    newObj.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                    newObj.GetComponent<SpriteRenderer>().sortingOrder = 2;
                 }
                 
             }

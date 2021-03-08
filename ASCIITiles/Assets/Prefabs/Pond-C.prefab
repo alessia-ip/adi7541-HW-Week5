@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4624296801593424344}
   m_Layer: 0
   m_Name: Pond-C
-  m_TagString: Untagged
+  m_TagString: NotWalkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

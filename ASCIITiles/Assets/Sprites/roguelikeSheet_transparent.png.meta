@@ -1549,7 +1549,7 @@ TextureImporter:
     second: roguelikeSheet_transparent_514
   - first:
       213: 9160647132686863015
-    second: roguelikeSheet_transparent_515
+    second: plantOrange
   - first:
       213: 7790923674342958341
     second: roguelikeSheet_transparent_516
@@ -1576,16 +1576,16 @@ TextureImporter:
     second: roguelikeSheet_transparent_523
   - first:
       213: 8599845125756789381
-    second: roguelikeSheet_transparent_524
+    second: BlueSeed
   - first:
       213: -8675484520434845740
-    second: roguelikeSheet_transparent_525
+    second: PurpleSeed
   - first:
       213: -7941464648248063020
-    second: roguelikeSheet_transparent_526
+    second: YellowSeed
   - first:
       213: 8505211702317053674
-    second: roguelikeSheet_transparent_527
+    second: OrangeSeed
   - first:
       213: 7555993957945501364
     second: roguelikeSheet_transparent_528
@@ -1714,10 +1714,10 @@ TextureImporter:
     second: roguelikeSheet_transparent_569
   - first:
       213: -396914397138278851
-    second: roguelikeSheet_transparent_570
+    second: plantBlue
   - first:
       213: -5044559938802526181
-    second: roguelikeSheet_transparent_571
+    second: PlantYellow
   - first:
       213: -6329090266334897097
     second: roguelikeSheet_transparent_572
@@ -1777,7 +1777,7 @@ TextureImporter:
     second: roguelikeSheet_transparent_590
   - first:
       213: -7376209606015614608
-    second: roguelikeSheet_transparent_591
+    second: tentRT
   - first:
       213: 5565235641866444076
     second: roguelikeSheet_transparent_592
@@ -1876,7 +1876,7 @@ TextureImporter:
     second: roguelikeSheet_transparent_623
   - first:
       213: -5192724919019581033
-    second: roguelikeSheet_transparent_624
+    second: PlantPurple
   - first:
       213: -6880511024858459767
     second: roguelikeSheet_transparent_625
@@ -1942,10 +1942,10 @@ TextureImporter:
     second: roguelikeSheet_transparent_645
   - first:
       213: -3698897367722835511
-    second: roguelikeSheet_transparent_646
+    second: TentLB
   - first:
       213: 6794172692804854991
-    second: roguelikeSheet_transparent_647
+    second: tentRB
   - first:
       213: -3124870277316055785
     second: roguelikeSheet_transparent_648
@@ -5051,6 +5051,9 @@ TextureImporter:
   - first:
       213: -5034813659679954093
     second: roguelikeSheet_transparent_1682
+  - first:
+      213: -6361139212075223418
+    second: tentLT
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -15975,7 +15978,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_515
+      name: plantOrange
       rect:
         serializedVersion: 2
         x: 408
@@ -16164,7 +16167,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_524
+      name: BlueSeed
       rect:
         serializedVersion: 2
         x: 566
@@ -16185,7 +16188,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_525
+      name: PurpleSeed
       rect:
         serializedVersion: 2
         x: 583
@@ -16206,7 +16209,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_526
+      name: YellowSeed
       rect:
         serializedVersion: 2
         x: 600
@@ -16227,7 +16230,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_527
+      name: OrangeSeed
       rect:
         serializedVersion: 2
         x: 617
@@ -17130,7 +17133,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_570
+      name: plantBlue
       rect:
         serializedVersion: 2
         x: 408
@@ -17151,7 +17154,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_571
+      name: PlantYellow
       rect:
         serializedVersion: 2
         x: 427
@@ -17554,9 +17557,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 766
-        y: 340
-        width: 32
-        height: 16
+        y: 342
+        width: 12
+        height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -17571,7 +17574,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_591
+      name: tentRT
       rect:
         serializedVersion: 2
         x: 799
@@ -18264,7 +18267,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_624
+      name: PlantPurple
       rect:
         serializedVersion: 2
         x: 408
@@ -18726,7 +18729,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_646
+      name: TentLB
       rect:
         serializedVersion: 2
         x: 783
@@ -18747,7 +18750,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_647
+      name: tentRB
       rect:
         serializedVersion: 2
         x: 799
@@ -40498,6 +40501,27 @@ TextureImporter:
       bones: []
       spriteID: 35bed70f6afb02ab0800000000000000
       internalID: -5034813659679954093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tentLT
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 340
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 686b271e691b8b7a0800000000000000
+      internalID: -6361139212075223418
       vertices: []
       indices: 
       edges: []
