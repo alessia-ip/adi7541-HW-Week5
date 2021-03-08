@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class campfire : MonoBehaviour
 {
+    //this is just to animate the campfire
+    
+    
     private float time = 0;
     public Sprite camp1;
     public Sprite camp2;

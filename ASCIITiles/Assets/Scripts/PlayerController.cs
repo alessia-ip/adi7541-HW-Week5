@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     public GameObject seeds;
 
     //is the current space a plantable space
-    private bool plantable = true;
+    public bool plantable = true;
 
     //the currently selected seed object, if there is one
     private GameObject selectedSeed;
@@ -60,7 +60,7 @@ public class PlayerController : MonoBehaviour
                 Vector2.down);
             
             if (plantH.collider != null && //if the player does hit a collider
-                plantH.distance < TerrainParser.tileSize &&  //AND it is within the distance of a tile
+                plantH.distance < 0.01f &&  //AND it is within the distance of a tile
                 plantH.collider.gameObject.name.Contains("Dirt")) //AND the object is dirt
             {
                 var newSeed = Instantiate<GameObject>(seeds); //plant a seed
