@@ -42,6 +42,7 @@ public class TerrainParser : MonoBehaviour
     public GameObject campfire;
     public GameObject flowerW;
     public GameObject flowerP;
+    public GameObject waterRock;
     
     // Start is called before the first frame update
     void Start()
@@ -157,6 +158,9 @@ public class TerrainParser : MonoBehaviour
                     case 'p'://purple flower
                         newObj = Instantiate<GameObject>(flowerP);
                         break;
+                    case 'W': //water rock
+                        newObj = Instantiate<GameObject>(waterRock);
+                        break; 
                     default:
                         newObj = null;
                         break;

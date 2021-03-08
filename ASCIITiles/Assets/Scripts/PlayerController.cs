@@ -30,6 +30,10 @@ public class PlayerController : MonoBehaviour
     //the number of crops harvested
     private int cropsHarvested = 0;
 
+    //upgrade theshold 
+    private int upgradeWater = 35;
+    
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -44,7 +48,7 @@ public class PlayerController : MonoBehaviour
         
         //set the OG canvas text
         waterText.text = "Water amount: " + waterAmt;
-        harvestedText.text = "Crops harvested: " + cropsHarvested;
+        harvestedText.text = "Crops harvested: " + cropsHarvested +"\n Crops to next upgrade: " + (upgradeWater - cropsHarvested); //update the UI with the new crops
     }
 
 
@@ -84,7 +88,16 @@ public class PlayerController : MonoBehaviour
                 Destroy(selectedSeed.gameObject); //destroy the seed
                 var gains = Random.Range(1, 5); //generate a new 'Gains' into to represent the crops
                 cropsHarvested += gains; //add gains to current crops gathered
-                harvestedText.text = "Crops harvested: " + cropsHarvested; //update the UI with the new crops
+                if (cropsHarvested >= upgradeWater)
+                {
+                    maxWater = maxWater + 5;
+                    harvestedText.text = "Max water increased to: " + maxWater; //update the UI with the new crops
+                    upgradeWater = upgradeWater * 2;
+                }
+                else
+                {
+                    harvestedText.text = "Crops harvested: " + cropsHarvested +"\n Crops to next upgrade: " + (upgradeWater - cropsHarvested); //update the UI with the new crops
+                }
             }
 
         }
