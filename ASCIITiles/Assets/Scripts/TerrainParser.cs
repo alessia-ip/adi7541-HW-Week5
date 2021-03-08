@@ -7,18 +7,24 @@ using UnityEngine.Serialization;
 public class TerrainParser : MonoBehaviour
 {
 
+    //tile offsets
     public float xOffset;
     public float yOffset;
+    
+    //tile size (also referenced in player controller)
     public static float tileSize = 0.15f;
     
+    //all file related vars
     private const string DIR = "/ASCIIFiles/";
     [FormerlySerializedAs("FILE_NAME")] public string FILE_NAME_TERRAIN;
     private string PATH_TO_TERRAIN;
     public string FILE_NAME_OBJECTS;
     private string PATH_TO_OBJECTS;
     
+    //this is an instance :)
     public GameObject instance;
     
+    //all terrain prefabs. header for editor clarity 
     [Header("Terrain Prefabs")] 
     public GameObject grassT;
     public GameObject dirtT;
@@ -26,12 +32,19 @@ public class TerrainParser : MonoBehaviour
     public GameObject sandT;
     public GameObject waterT;
     
+    //all object prefabs. header for editor clarity 
     [Header("Object Prefabs")] 
     public GameObject playerT;
+    public GameObject tentTopLeft;
+    public GameObject tentTopRight;
+    public GameObject tentBottomLeft;
+    public GameObject tentBottomRight;
+    
     
     // Start is called before the first frame update
     void Start()
     {
+        //set instance
         if (instance != null)
         {
             instance = this.gameObject;
@@ -42,14 +55,16 @@ public class TerrainParser : MonoBehaviour
             Destroy(this.gameObject);
         }
         
-        
+        //set paths
         PATH_TO_TERRAIN = Application.dataPath + DIR + FILE_NAME_TERRAIN;
         PATH_TO_OBJECTS = Application.dataPath + DIR + FILE_NAME_OBJECTS;
         //Debug.Log(PATH_TO_TERRAIN);
-        GetTerrain();
-        GetObjects();
+        GetTerrain(); //get all the terrain
+        GetObjects(); //get all the objects
     }
 
+    
+    //strictly for the TERRAIN
     void GetTerrain()
     {
         //In this line we want to get all of the lines of the file, so we can iterate over them
@@ -91,7 +106,7 @@ public class TerrainParser : MonoBehaviour
                 if (newObj != null)
                 {
                     newObj.transform.position = new Vector2(x * tileSize + xOffset, -y * tileSize + yOffset);
-                    newObj.GetComponent<SpriteRenderer>().sortingOrder = 0;
+                    newObj.GetComponent<SpriteRenderer>().sortingOrder = 0; //set the sort order so these are on the bottom
                 }
                 
             }
@@ -99,6 +114,7 @@ public class TerrainParser : MonoBehaviour
         
     }
 
+    //STRICTLY FOR OBJECTS
     void GetObjects()
     {
         string[] objects = File.ReadAllLines(PATH_TO_OBJECTS);
@@ -118,6 +134,18 @@ public class TerrainParser : MonoBehaviour
                     case 'p': //player 
                         newObj = Instantiate<GameObject>(playerT);
                         break;
+                    case 'R': //tent top right
+                        newObj = Instantiate<GameObject>(tentTopRight);
+                        break;
+                    case 'r': //tent bottom right
+                        newObj = Instantiate<GameObject>(tentBottomRight);
+                        break;
+                    case 'L': //tent top left
+                        newObj = Instantiate<GameObject>(tentTopLeft);
+                        break;
+                    case 'l': //tent bottom left
+                        newObj = Instantiate<GameObject>(tentBottomLeft);
+                        break;
                     default:
                         newObj = null;
                         break;
@@ -126,7 +154,7 @@ public class TerrainParser : MonoBehaviour
                 if (newObj != null)
                 {
                     newObj.transform.position = new Vector2(x * tileSize + xOffset, -y * tileSize + yOffset);
-                    newObj.GetComponent<SpriteRenderer>().sortingOrder = 2;
+                    newObj.GetComponent<SpriteRenderer>().sortingOrder = 2; //set the sort order so these are on the top
                 }
                 
             }
